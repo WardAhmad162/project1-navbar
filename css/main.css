@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.acctive{
+    font-weight: 800;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width:calc(100% - 180px);
+    margin: auto;
+}
+/*header*/
+header{
+    position: sticky;
+    width: 100%;
+    top:0;
+    z-index: 9;
+    text-transform: capitalize;
+    box-shadow: 0px 1.64744px 8.2372px 0px rgba(0, 0, 0, 0.25);
+    padding: 10px 0px;
+    background-color: #fff;
+}
+header img ,footer .logo img{
+    width: 150px;
+}
+/*navbar*/
+nav a{
+    color: #101928;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap:19px;
+}
+/*auth*/
+header .auth{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px
+}
+header .auth a{
+    padding: 6px 25.181px;
+    border-radius: 9px;
+    font-family: Inter;
+    display: flex;
+    align-items: center;
+}
+header .login{
+    color: #545BE8;
+    border: #545BE8 solid 2px;
+    background-color: white;
+}
+header .register, .course-discription a{
+    color: #fff;
+    background: #545BE8;
+}
+/* courses */
+.courses{
+    padding: 40px 0px;
+}
+.course img {
+    width: 100%;
+    aspect-ratio: 39.048px/13.562px;
+    filter: brightness(70%);
+    display: flex;
+}
+.courses .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap:70px;
+}
+.courses .course-items, .courses .course-discription{
+    width: calc( ( 100% - 70px) / 2 );
+}
+.courses .course-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+}
+.course{
+    width: calc( (100% - 30px ) / 2 );
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.31);
+}
+.course-card{
+    position: relative;
+}
+.course-info{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 17px 0px;
+}
+.course-info span:first-of-type{
+    align-self: flex-start;
+    background-color: #545BE8;
+    padding: 5px;
+    color:#fff;
+}
+.course-info span:last-of-type{
+    align-self: flex-end;
+        color:#fff;
+        padding-right: 10px;
+    font-weight: 900;
+}
+.course-detailes{
+    padding: 12px;
+}
+.course-detailes .row:first-child span:first-of-type{
+    font-weight: 900;
+    font-size:19px;
+}
+.course-detailes .row:first-child span:last-of-type{
+    font-size: 10px;
+    color: #545BE8;
+}
+.course-detailes .row:last-of-type{
+    justify-content:flex-start;
+    padding-top: 5px;
+    gap:15px;
+}
+.course-detailes .row:last-of-type span{
+    font-size: 16px;
+    color: #969696;
+}
+.course-discription{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-self: flex-start;
+    gap:20px;
+    padding-top: 25px;
+}
+.course-discription span{
+    color: #545BE8;
+    font-weight: 600;
+}
+.course-discription h2{
+    font-size: 40px;
+    font-weight: 900;
+    color: #141E32;
+    font-family: Poppins;
+    width:calc( 100% - 200% ) ;
+    line-height: 50px;
+}
+.course-discription p{
+    color: #969696;
+    font-family: Poppins;
+    width: calc( 100% - 20px );
+}
+.course-discription a{
+    width: fit-content;
+    padding: 7px 30px;
+    border-radius: 5px;
+}
+/* Testimonials */
+.testimonials{
+    padding: 30px 0px;
+}
+.testimonials .row{
+    flex-direction: column;
+    gap:30px
+}
+.testimonials h2{
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+.testimonials .testimonials-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+}
+.testimonials-item{
+    width: calc( (100% - 30px) / 2 );
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.31);
+    padding: 20px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:13px;
+}
+.Client-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:10px;
+}
+.Client-info img{
+    width: 100%;
+    filter: brightness(75%);
+}
+.Client-info .name{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+.Client-info .name span:first-of-type{
+    font-weight: 700;
+    font-size: 15px;
+}
+.Client-info .name span:last-of-type{
+    font-size: 10px;
+    color: #969696;
+}
+.testimonials-item .icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px
+}
+.testimonials-item .icons i{
+    color:#F1CC4A;
+    font-size: 15px;
+}
+.testimonials-item p{
+    width:  calc( 100% - 20% );
+    color: #646464;
+    font-size: 15px;
+}
+
+/*footer*/
+footer{
+    background: #393E46;
+    padding: 50px 0px;
+    color:white;
+}
+footer a{
+    color: white;
+}
+footer .row{
+    gap:80px;
+}
+footer .start,footer .end{
+    width: calc( ( 100% - 80px ) / 2 );
+}
+footer .start{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:30px;
+    font-size: 13px;
+}
+footer .start .icons{
+    display: flex;
+    flex-wrap: wrap;
+    gap:12px;
+}
+footer .start .icons svg{
+    border: solid #fff 2px ;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    box-sizing: content-box;
+}
+
+footer .end {
+    display: flex;
+    flex-wrap: wrap;
+    gap:40px;
+}
+footer .end .footer-item{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:17px;
+}
+footer .end .footer-item nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:10px;
+
+}
+footer .end a{
+    font-size: 10px;
+}
+footer .end h2{
+    font-size: 17px;
+}
